@@ -22,5 +22,10 @@ module.exports = {
       "path": "src/pages/"
     },
     __key: "pages"
-  }]
+  }, {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },]
 };

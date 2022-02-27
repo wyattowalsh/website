@@ -1,0 +1,11 @@
+{
+    "skills": {
+        "Programming Languages": [
+            {
+                "name": "Python",
+                "icon": "images/skills/python.svg",
+                ""
+            }
+        ]
+    }
+}
