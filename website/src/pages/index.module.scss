@@ -2,7 +2,7 @@ html,
 body,
 #root,
 .App {
-    height: 100vh;
+    height: 100%;
     font-family: "Roboto Serif";
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@ body,
 }
 
 body {
-    background: #000;
+    background: white;
     margin: 0;
 }
 

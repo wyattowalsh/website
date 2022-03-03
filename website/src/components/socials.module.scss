@@ -1,0 +1,52 @@
+.container {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+}
+
+.link {
+}
+.icon {
+    font-size: 3.1rem;
+}
+
+.icon:hover {
+    // enlarge and shake with urgency
+    animation: wave-animation 1s infinite;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.23);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 600px) {
+    .icon {
+        font-size: 6rem;
+        padding: 1rem;
+    }
+}
+@media (min-width: 900px) {
+    .icon {
+        font-size: 4.5rem;
+    }
+}

@@ -136,7 +136,9 @@ module.exports = {
             dashes: "oldschool",
           },
         },
+      ],
     },
+  },
   {
     resolve: "gatsby-plugin-social-cards",
     options: {
@@ -145,7 +147,7 @@ module.exports = {
       // image to use when no cover in frontmatter
       backgroundImage: "./static/img/hvitserkur.JPG",
       // author to use when no auth in frontmatter
-      defaultAuthor: "Wyatt Walsh,
+      defaultAuthor: "Wyatt Walsh",
       // card design
       design: "card", // 'default' or 'card'
     },
@@ -175,17 +177,17 @@ module.exports = {
       showSpinner: false,
     },
 },
-{
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: "Roboto Serif",
-            // subsets: [`latin`],
-          },
-        ],
-      },
-},
+// {
+//       resolve: `gatsby-plugin-prefetch-google-fonts`,
+//       options: {
+//         fonts: [
+//           {
+//             family: "Roboto Serif",
+//             // subsets: [`latin`],
+//           },
+//         ],
+//       },
+// },
   `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -224,5 +226,7 @@ module.exports = {
         trailingSlashes: true,
         // usePathPrefix: optional, if you are using pathPrefix above
         usePathPrefix: '/blog',
-     },]
-};
+     },
+  }
+  ],
+}
