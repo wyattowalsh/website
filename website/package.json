@@ -48,6 +48,7 @@
     "gatsby-remark-prismjs": "^6.8.0",
     "gatsby-remark-reading-time": "^1.1.0",
     "gatsby-remark-smartypants": "^5.8.0",
+    "gatsby-remark-use-frontmatter-path": "^1.0.0",
     "gatsby-source-filesystem": "^4.8.1",
     "gatsby-transformer-json": "^4.8.0",
     "gatsby-transformer-remark": "^5.8.1",

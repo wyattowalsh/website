@@ -1,0 +1,27 @@
+html,
+body,
+#root,
+.App {
+    height: 100%;
+    font-family: "Roboto Serif";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: white;
+    margin: 0;
+}
+
+#tsparticles {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}

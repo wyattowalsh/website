@@ -20,7 +20,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <div className={styles.App}>
-        <Particles options={particlesOptions} />
+        {/* <Particles options={particlesOptions} /> */}
         <Intro/>
       </div>
     </Layout>
