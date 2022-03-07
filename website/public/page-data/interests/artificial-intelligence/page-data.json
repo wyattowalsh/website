@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-pages-interests-artificial-intelligence-mdx",
-    "path": "/interests/artificial-intelligence/",
-    "result": {"pageContext":{"frontmatter":{"title":"Artificial Intelligence","tagline":"Leveraging technology, math, and data to generate insights and automate complexities","image":"./images/ai.webp","path":"/interests/ai","last-updated":"February 27, 2022","aliases":["AI","Machine Learning","ML","Reinforcement Learning","RL"]},"breadcrumb":{"location":"/interests/artificial-intelligence/","crumbs":[{"pathname":"/","crumbLabel":"Root"},{"pathname":"/interests/","crumbLabel":"interests"},{"pathname":"/interests/artificial-intelligence/","crumbLabel":"artificial-intelligence"}]}}},
-    "staticQueryHashes": []}

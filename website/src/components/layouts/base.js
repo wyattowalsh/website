@@ -4,6 +4,7 @@ import * as React from "react";
 import "./base.module.scss";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import { Helmet } from "react-helmet"
 
 const theme = createTheme({
   palette: {
@@ -142,10 +143,16 @@ const theme = createTheme({
 
 const Layout = ({ children }) => {
 	return (
-		<ThemeProvider theme={theme}>
-            <CssBaseline />
-            <div className={"layout"}>{children}</div>
-        </ThemeProvider>
+    <ThemeProvider theme={theme}>
+      <Helmet>
+        <link rel="apple-touch-icon" sizes="180x180" href="data/images/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="data/images/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="data/images/favicon-16x16.png"/>
+        <link rel="manifest" href="data/images/site.webmanifest"/>
+      </Helmet>
+        <CssBaseline />
+        <div className={"layout"}>{children}</div>
+    </ThemeProvider>
 	);
 };
 
