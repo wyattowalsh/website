@@ -4,69 +4,69 @@ module.exports = {
     siteUrl: `https://www.wwalsh.io`
   },
   plugins: [
-    "gatsby-transformer-json",
-    // {
-    //   resolve: "gatsby-source-wikipedia",
-    //   options: {
-    //     // For each query, the plugin will go to Wikipedia's API and search for the query
-    //     // and fetch the top articles to the specified limit.
-    //     queries: [
-    //       {
-    //         query: `progressive web app`,
-    //         limit: 5,
-    //       },
-    //       {
-    //         query: `cheese`,
-    //         limit: 10,
-    //       },
-    //       {
-    //         query: `developers`,
-    //         limit: 10,
-    //       },
-    //     ],
-    //   },
-    // },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
+        name: `Wyatt Walsh's Personal Website`,
+        short_name: `Wyatt Walsh's Personal Website`,
+        description: `Wyatt Walsh's Personal Website | Interests, Projects, Career, and More`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#6a9fb5`,
+        display: `standalone`,
+        icon: `./src/data/images/logo-transparent.png`
       },
     },
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages/`,
+        path: `${__dirname}/src/pages`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-page-creator`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
-        ignore: [`**/\.*`], // ignore files starting with a dot
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blog`,
-        path: `${__dirname}/src/pages/blog/`,
+        path: `${__dirname}/src/pages`,
+        // ignore: [`foo-bar.js`],
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `interests`,
-        path: `${__dirname}/src/pages/interests/`,
+        path: `${__dirname}/src/interests`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/interests`,
+        // ignore: [`foo-bar.js`],
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `projects`,
-        path: `${__dirname}/src/pages/projects`,
+        path: `${__dirname}/src/projects`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/projects`,
+        // ignore: [`foo-bar.js`],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
     {
@@ -135,11 +135,21 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
-        "extensions": [".mdx", ".md"],
-        "defaultLayouts": {
-          "interests": "src/components/layouts/interests.js",
+        extensions: [".mdx", ".md"],
+        defaultLayouts: {
         },
-        "gatsbyRemarkPlugins": [
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-table-of-contents`,
+            options: {
+              exclude: "Table of Contents",
+              tight: false,
+              ordered: false,
+              fromHeading: 1,
+              toHeading: 6,
+              className: "table-of-contents"
+            },
+          },
           "gatsby-remark-autolink-headers",
           "gatsby-remark-embed-video",
           "gatsby-remark-images",
@@ -282,6 +292,17 @@ module.exports = {
         gfm: true,
         // Plugins configs
         plugins: [
+          {
+            resolve: `gatsby-remark-table-of-contents`,
+            options: {
+              exclude: "Table of Contents",
+              tight: false,
+              ordered: false,
+              fromHeading: 1,
+              toHeading: 6,
+              className: "table-of-contents"
+            },
+          },
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {

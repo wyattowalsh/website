@@ -5,3 +5,67 @@ $color-primary-darkest: #437286;
 $color-primary-light: #7dabbf;
 $color-primary-lighter: #87b2c3;
 $color-primary-lightest: #a4c4d2;
+
+$color-secondary: #b5826a;
+
+$color-tertiary: #b5a76a;
+
+$color-quaternary: #9b6ab5;
+
+$pantone2022: #6667AB;
+$pantone2021-1: #F5DF4D;
+$pantone2021-2: #939597;
+$pantone2020: #0F4C81;
+$pantone2019: #FF6F61;
+$pantone2018: #5F4B8B;
+$pantone2017: #88B04B;
+$pantone2016-1: #92A8D1;
+$pantone2016-2: #F7CAC9;
+$pantone2015: #955251;
+$pantone2014: #B163A3;
+$pantone2013: #009473;
+$pantone2012: #DD4124;
+$pantone2011: #D94F70;
+$pantone2010: #45B5AA;
+$pantone2009: #F0C05A;
+$pantone2008: #5A5B9F;
+$pantone2007: #9B1B30;
+$pantone2006: #DECDBE;
+$pantone2005: #53B0AE;
+$pantone2004: #E2583E;
+$pantone2003: #7BC4C4;
+$pantone2002: #BF1932;
+$pantone2001: #C74375;
+$pantone2000: #9BB7D4;
+
+$color-palette: (
+    $color-primary,
+    $color-secondary,
+    $color-tertiary,
+    $color-quaternary,
+    $pantone2022,
+    $pantone2021-1,
+    $pantone2021-2,
+    $pantone2020,
+    $pantone2019,
+    $pantone2018,
+    $pantone2017,
+    $pantone2016-1,
+    $pantone2016-2,
+    $pantone2015,
+    $pantone2014,
+    $pantone2013,
+    $pantone2012,
+    $pantone2011,
+    $pantone2010,
+    $pantone2009,
+    $pantone2008,
+    $pantone2007,
+    $pantone2006,
+    $pantone2005,
+    $pantone2004,
+    $pantone2003,
+    $pantone2002,
+    $pantone2001,
+    $pantone2000
+);

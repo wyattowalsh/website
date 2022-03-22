@@ -1,7 +1,7 @@
 /* Gatsby.js base layout for my personal website */
 
 import * as React from "react";
-import "./base.module.scss";
+import * as styles from "./base.module.scss";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Helmet } from "react-helmet"
@@ -150,8 +150,8 @@ const Layout = ({ children }) => {
         <link rel="icon" type="image/png" sizes="16x16" href="data/images/favicon-16x16.png"/>
         <link rel="manifest" href="data/images/site.webmanifest"/>
       </Helmet>
-        <CssBaseline />
-        <div className={"layout"}>{children}</div>
+      <CssBaseline />
+      <div className={styles.layout}>{children}</div>
     </ThemeProvider>
 	);
 };

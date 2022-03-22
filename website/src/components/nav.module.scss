@@ -1,0 +1,24 @@
+@import "../styles/variables";
+
+.navBar {
+    background-image: linear-gradient(-18deg, $color-primary, $color-primary-light);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    height: 6vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.25rem;
+}
+
+.logoLink {
+    text-decoration: none;
+    color: black;
+}
+
+.logoLink:hover {
+    color: RGBA(0,0,0,0.5);
+}

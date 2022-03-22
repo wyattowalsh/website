@@ -11,18 +11,18 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import Logo from "../public/img/logo.png";
-import Image from "next/image";
-import styles from "./Nav.module.scss";
+import Logo from "../data/images/logo.webp";
+import * as styles from "./nav.module.scss";
+import { Link } from "gatsby"
 
-const sections = ["About", "Interests", "Projects", "Career", "Blog"];
+const sections = ["Interests", "Projects", "Blog", "Career"];
 
 const Nav = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+  const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
 
@@ -31,34 +31,37 @@ const Nav = () => {
   };
 
   return (
-    <AppBar position="static" className={styles.NavBar}>
-      <Container maxWidth="xl" className={styles.NavContainer}>
+    <AppBar position="static" className={styles.navBar}>
+      <Container maxWidth="xl" className={styles.navContainer}>
         <Toolbar
           disableGutters
           sx={{
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
-          <Box
-            sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}
-          >
-            <Image src={Logo} alt="WWalsh.io Logo" width={50} height={50} />
-            <Typography
-              variant="h6"
-              noWrap
-              component="div"
-              sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                padding: 2,
-                fontWeight: "700",
-              }}
+          <Link to="/" className={styles.logoLink}>
+            <Box
+              sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center"}}
             >
-              Hi, I'm Wyatt 👋
-            </Typography>
-          </Box>
+              <img src={Logo} alt="WWalsh.io Logo" className={styles.logo} />
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{
+                  mr: 2,
+                  // display: { xs: "none", md: "flex" },
+                  // padding: 2,
+                  fontWeight: "700",
+                }}
+              >
+                WWalsh.io
+              </Typography>
+            </Box>
+          </Link>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"

@@ -4,6 +4,8 @@ import * as React from "react"
 import * as styles from "./intro.module.scss"
 import Socials from "./socials"
 import { Grid, Container, Typography } from '@mui/material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 const Intro = () => {
     return (
@@ -29,6 +31,7 @@ const Intro = () => {
                 </Typography>
                 <Socials />
             </Grid>
+            <FontAwesomeIcon icon={faChevronDown} className="fa-bounce" size="5x" sx="--fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1;--fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0.3;" />
         </Grid>
     )
 }

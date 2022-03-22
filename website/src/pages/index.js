@@ -7,8 +7,7 @@ import Particles from "react-tsparticles"
 import particlesOptions from "../data/particles/particles.json"
 import Intro from "../components/index/intro"
 import Layout from "../components/layouts/base"
-
-// import Interests from "../components/interests"
+import InterestsPrevivew from "../components/interestspreview"
 // import Projects from "../components/projects"
 // import Skills from "../components/skills"
 // import Education from "../components/education"
@@ -21,7 +20,8 @@ const IndexPage = () => {
     <Layout>
       <div className={styles.App}>
         <Particles options={particlesOptions} />
-        <Intro/>
+        <Intro />
+        <InterestsPrevivew />
       </div>
     </Layout>
   )

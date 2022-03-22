@@ -15,60 +15,55 @@
       "value": "#000000"
     },
     "shape": {
-      "type": "circle",
+      "type": "star",
       "stroke": {
         "width": 0.3,
         "color": "#ffffff"
       },
       "polygon": {
-        "nb_sides": 7
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
+        "nb_sides": 5
       }
     },
     "opacity": {
       "value": 0.5,
       "random": false,
       "anim": {
-        "enable": true,
-        "speed": 1,
+        "enable": false,
+        "speed": 0.5,
         "opacity_min": 0.05,
         "sync": true
       }
     },
     "size": {
-      "value": 10,
+      "value": 7,
       "random": true,
       "anim": {
-        "enable": false,
-        "speed": 80,
+        "enable": true,
+        "speed": 0.5,
         "size_min": 0.1,
-        "sync": false
+        "sync": true
       }
     },
     "line_linked": {
       "enable": true,
-      "distance": 300,
+      "distance": 200,
       "color": "#6a9fb5",
-      "opacity": 0.2,
-      "width": 0.25
+      "opacity": 0.5,
+      "width": 0.5
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 1,
       "direction": "none",
-      "random": false,
-      "straight": false,
+      "random": true,
+      "straight": true,
       "out_mode": "out",
-      "bounce": true,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
+      "bounce": true
+    },
+    "wobble": {
+      "enable": true,
+      "speed": 1,
+      "distance": 5
     }
   },
   "interactivity": {
@@ -88,7 +83,7 @@
       "grab": {
         "distance": 800,
         "line_linked": {
-          "opacity": 0.3
+          "opacity": 0.5
         }
       },
       "bubble": {
@@ -96,17 +91,7 @@
         "size": 80,
         "duration": 2,
         "opacity": 0.2,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 150,
-        "duration": 15
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
+        "speed": 1
       }
     }
   },

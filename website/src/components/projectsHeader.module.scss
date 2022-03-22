@@ -1,0 +1,161 @@
+@import "../styles/variables";
+
+.header {}
+
+.imageContainer {
+    width: 100vw;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.container {
+    border-left: 0.2rem dashed black;
+    border-bottom: 0.3rem solid black;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 0.1rem dashed black;
+}
+
+.divider {
+    width: 100%;
+    height: 0.6rem;
+    background-color: black;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.meta {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.metaItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.icons {
+    font-size: 2rem;
+    margin: 0.3rem;
+}
+
+.metaInfo {
+    font-size: 0.9rem;
+}
+
+.metaLabel {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.tag {
+    background-color: $color-primary-darkest;
+    color: white;
+    padding: 0.15rem;
+    margin: 0.1rem;
+    font-weight: 500;
+}
+
+.skill {
+    background-color: $color-secondary;
+    color: white;
+    padding: 0.15rem;
+    margin: 0.1rem;
+    font-weight: 500;
+}
+
+.links {
+    margin: 0.5rem;
+    
+}
+
+.gh {
+    color: #181717;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 600px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .tagline {
+        font-size: 1.6rem;
+    }
+    .divider {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .icons {
+        font-size: 2.5rem;
+        margin: 0.5rem;
+    }
+    .metaInfo {
+        font-size: 1rem;
+    }
+    .metaLabel {
+        font-size: 1rem;
+    }
+    .tag {
+        font-size: 1rem;
+    }
+    .skill { 
+        font-size: 1rem;
+    }
+    .gh {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .tagline {
+        font-size: 1.8rem;
+    }
+
+    .divider {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .icons {
+        font-size: 2.8rem;
+        margin: 0.7rem;
+    }
+
+    .metaInfo {
+        font-size: 1.1rem;
+    }
+    .tag {
+        font-size: 1.1rem;
+    }
+    .skill {
+        font-size: 1.1rem;
+    }
+    .metaLabel {
+        font-size: 1.1rem;
+    }
+
+    .gh {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+}
